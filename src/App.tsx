@@ -33,7 +33,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="container">
       <h1>To-Do List</h1>
       <TodoInput onAdd={addTodo} />
       <FilterButtons currentFilter={filter} onChangeFilter={setFilter} />

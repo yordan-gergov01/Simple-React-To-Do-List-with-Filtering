@@ -7,6 +7,10 @@ interface Props {
 }
 
 export default function TodoList({ todos, onToggle }: Props) {
+  if (todos.length === 0) {
+    return <p style={{ textAlign: "center" }}>No available tasks</p>;
+  }
+
   return (
     <ul>
       {todos.map((todo) => (
