@@ -1,54 +1,45 @@
-# React + TypeScript + Vite
+# To-Do List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple yet effective To-Do List application built with React and TypeScript. This app allows users to manage tasks by adding, toggling their completion status, and filtering them based on their state (all, active, or completed).
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Add Tasks – Easily add new tasks with an input field and a button.
+- Toggle Completion – Click on a task to mark it as completed or active.
+- Filter Tasks – Filter your tasks to view all, only active, or only completed tasks.
+- Clear UI Feedback – Shows a friendly message when there are no tasks to display.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Technologies Used
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- React – For building the user interface.
+- TypeScript – For type safety and better developer experience.
+- UUID – For generating unique IDs for each task.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+
+## Installation
+
+1. Clone the repository
+   git clone https://github.com/yordan-gergov01/Simple-React-To-Do-List-with-Filtering.git
+   cd to-do-list
+
+2. Install dependencies
+   npm install
+
+3. Start the development server
+   npm run dev
+
+   The app should be available at http://localhost:5173/ (or your Vite config).
+
+
+## Usage
+
+- Add a task by typing in the input field and clicking Add New Task.
+- Toggle a task by clicking on its text (crosses out completed tasks).
+- Filter tasks using the All, Active, and Completed buttons.
+   
+   
+
+
