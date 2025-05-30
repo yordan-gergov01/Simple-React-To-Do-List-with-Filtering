@@ -22,13 +22,17 @@ A simple yet effective To-Do List application built with React and TypeScript. T
 ## Installation
 
 1. Clone the repository
+2. 
    git clone https://github.com/yordan-gergov01/Simple-React-To-Do-List-with-Filtering.git
+   
    cd to-do-list
 
-2. Install dependencies
+4. Install dependencies
+   
    npm install
 
-3. Start the development server
+6. Start the development server
+   
    npm run dev
 
    The app should be available at http://localhost:5173/ (or your Vite config).
